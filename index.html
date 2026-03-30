@@ -1,0 +1,171 @@
+## ✅ Basic Portfolio HTML Template
+
+Awesome news: the structure is ready and complete in one shot. You can copy/paste this into a file like `index.html` and open in your browser instantly.
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Portfolio</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      color: #333;
+      background: #f8f9fa;
+    }
+    header {
+      background: #262b40;
+      color: #fff;
+      padding: 16px 24px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 1.6rem;
+    }
+    nav a {
+      color: #fff;
+      margin-left: 16px;
+      text-decoration: none;
+      font-weight: 600;
+    }
+    .hero {
+      background: #4b6cb7;
+      background: linear-gradient(135deg, #4b6cb7, #182848);
+      color: #fff;
+      padding: 80px 24px;
+      text-align: center;
+    }
+    section {
+      max-width: 960px;
+      margin: 24px auto;
+      background: #fff;
+      padding: 24px;
+      box-shadow: 0 2px 12px rgba(0,0,0,.08);
+      border-radius: 8px;
+    }
+    h2 {
+      margin-top: 0;
+      color: #2d3a63;
+    }
+    ul.skills {
+      list-style: none;
+      padding: 0;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 12px;
+    }
+    ul.skills li {
+      background: #e7ecfa;
+      border-radius: 6px;
+      padding: 10px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Jackie</h1>
+    <nav>
+      <a href="#hero">Home</a>
+      <a href="#resume">Resume</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section id="hero" class="hero">
+    <h2>Welcome!</h2>
+    <p>Hi, I’m Jackie (they/them). I build data-driven solutions and I’m passionate about turning data into insight.</p>
+  </section>
+
+  <section id="resume">
+    <h2>Resume</h2>
+    <p><strong>Jacob "Jackie" Troumbley</strong> (they/them)</p>
+    <p>Preston, ID 83263 • 435-999-9971 • <a href="mailto:jtroumbley13@gmail.com">jtroumbley13@gmail.com</a></p>
+    <p>Detail-oriented and adaptable professional with 4+ years of experience in high-volume warehouse operations and customer service, focused on data integrity, order fulfillment, and system tracking. Proven ability to manage multiple tasks efficiently while maintaining exceptional accuracy and leveraging skills in Microsoft Office (Excel) and order management systems.</p>
+    <p>Seeking a data entry role to apply a strong background in inventory control and efficient process management.</p>
+  </section>
+
+  <section id="skills">
+    <h2>Skills</h2>
+    <ul class="skills">
+      <li>Communication (verbal & written)</li>
+      <li>Customer service and conflict resolution</li>
+      <li>Order fulfillment & data entry</li>
+      <li>Microsoft Office Suite (Word, Excel, Outlook)</li>
+      <li>Multi-tasking and time management</li>
+      <li>Attention to detail and organization</li>
+      <li>Virtual collaboration tools (Zoom, Slack)</li>
+      <li>Order management and shipping/receiving systems</li>
+      <li>Warehouse operations, pallet jack, forklift, RF scanner</li>
+      <li>Soldering and food preparation</li>
+    </ul>
+  </section>
+
+  <section id="experience">
+    <h2>Work History</h2>
+    <h3>Cook/Cashier, Fast Stop 1144 — Franklin, ID</h3>
+    <p>01/2025 to 08/2025</p>
+    <ul class="skills">
+      <li>Delivered top-tier customer service</li>
+      <li>Made quality orders in great time</li>
+      <li>Maintained clean, organized, and efficient workspace</li>
+    </ul>
+
+    <h3>Cook, Arctic Circle — Preston, ID</h3>
+    <p>06/2024 to 12/2024</p>
+    <ul class="skills">
+      <li>Provided accurate and satisfying customer service</li>
+      <li>Managed multiple orders and maintained presentation</li>
+      <li>Supported team communications and safety standards</li>
+    </ul>
+
+    <h3>Delivery Driver, Domino’s Pizza — Preston, ID</h3>
+    <p>08/2023 to 05/2024</p>
+    <ul class="skills">
+      <li>Delivered 10-12 orders per day with high customer satisfaction</li>
+      <li>Managed professional customer interactions and efficient workflows</li>
+    </ul>
+
+    <h3>Team Member, Wendy’s — Preston, ID</h3>
+    <p>02/2023 to 07/2023</p>
+    <ul class="skills">
+      <li>Delivered fast customer service in drive-thru and counter roles</li>
+      <li>Maintained clean and stocked environment during busy periods</li>
+    </ul>
+
+    <h3>Warehouse Inventory Clerk, RR Donnelley — Logan, UT</h3>
+    <p>03/2022 to 01/2023</p>
+    <ul class="skills">
+      <li>Managed shipping/receiving of 50+ packages daily</li>
+      <li>Improved inventory accuracy through team communication</li>
+      <li>Assisted with data entry and tracking for order processing</li>
+    </ul>
+
+    <h3>Warehouse Technician, Thermo Fisher Scientific — Logan, UT</h3>
+    <p>08/2019 to 02/2022</p>
+    <ul class="skills">
+      <li>Handled receiving, sorting, and inventory delivery for production</li>
+      <li>Maintained cleanroom safety and quality compliance</li>
+      <li>Coordinated cross-functional operations for urgent inventory needs</li>
+    </ul>
+  </section>
+
+  <section id="education">
+    <h2>Education</h2>
+    <p>High School Graduate, Preston High School, Preston, ID</p>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Feel free to connect via email@example.com or LinkedIn.</p>
+  </section>
+</body>
+</html>
+```
