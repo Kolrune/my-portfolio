@@ -66,6 +66,67 @@ Awesome news: the structure is ready and complete in one shot. You can copy/past
       border-radius: 6px;
       padding: 10px;
     }
+    .projects-grid {
+      display: grid;
+      gap: 18px;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      margin-top: 16px;
+    }
+    .project-card {
+      background: #f4f7ff;
+      border: 1px solid #dde3f4;
+      border-radius: 10px;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    .project-card h3 {
+      margin-top: 0;
+      margin-bottom: 10px;
+      color: #1d2754;
+    }
+    .project-card p {
+      margin: 0 0 12px;
+      color: #4a526f;
+      line-height: 1.45;
+    }
+    .project-card .tech {
+      font-size: 0.95rem;
+      color: #2d3a63;
+      margin-bottom: 14px;
+      font-weight: 600;
+    }
+    .project-card .result {
+      font-size: 0.95rem;
+      color: #24315e;
+      margin-bottom: 12px;
+      font-weight: 600;
+    }
+    .project-card a {
+      color: #4b6cb7;
+      text-decoration: none;
+      font-weight: 700;
+    }
+    .project-card a:hover {
+      text-decoration: underline;
+    }
+    footer {
+      max-width: 960px;
+      margin: 0 auto 24px;
+      padding: 18px 24px;
+      text-align: center;
+      color: #5d657f;
+      font-size: 0.95rem;
+    }
+    footer a {
+      color: #4b6cb7;
+      text-decoration: none;
+      font-weight: 600;
+    }
+    footer a:hover {
+      text-decoration: underline;
+    }
   </style>
 </head>
 <body>
@@ -75,6 +136,7 @@ Awesome news: the structure is ready and complete in one shot. You can copy/past
       <a href="#hero">Home</a>
       <a href="#resume">Resume</a>
       <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
       <a href="#contact">Contact</a>
     </nav>
   </header>
@@ -106,6 +168,52 @@ Awesome news: the structure is ready and complete in one shot. You can copy/past
       <li>Warehouse operations, pallet jack, forklift, RF scanner</li>
       <li>Soldering and food preparation</li>
     </ul>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <p>TripleTen coursework showing business analytics, market research, entertainment industry analysis, and statistical methodology.</p>
+    <div class="projects-grid">
+      <article class="project-card">
+        <div>
+          <h3>Telecom Plan Revenue Analysis</h3>
+          <p>Conducted comprehensive revenue analysis for Megaline telecom to determine which prepaid plan (Surf vs Ultimate) generates higher profits. Analyzed customer usage patterns across calls, texts, and data consumption using Python.</p>
+          <p class="tech">Technologies: Python, pandas, matplotlib, Jupyter Notebook, statistical analysis, hypothesis testing</p>
+          <p class="result">Key Result: Identified the more profitable plan and provided data-driven insights for advertising budget allocation.</p>
+        </div>
+        <p><strong>Code available upon request.</strong></p>
+      </article>
+
+      <article class="project-card">
+        <div>
+          <h3>Discontinued Gaming Console Sales Analysis</h3>
+          <p>Analyzed historical sales data for discontinued gaming consoles to identify market trends and pricing strategies. Processed sales data across multiple manufacturers and time periods to support pricing and repair prioritization decisions.</p>
+          <p class="tech">Technologies: Python, data manipulation, list processing, statistical calculations</p>
+          <p class="result">Key Result: Provided insights on console performance by manufacturer and release period to guide business decisions.</p>
+        </div>
+        <p><strong>Code available upon request.</strong></p>
+      </article>
+
+      <article class="project-card">
+        <div>
+          <h3>Entertainment Industry IMDb Analysis</h3>
+          <p>Investigated the relationship between IMDb user votes and ratings during the Golden Age of television (1999-present). Tested the hypothesis that highly rated TV shows also receive the most audience votes.</p>
+          <p class="tech">Technologies: Python, statistical correlation analysis, rating trend analysis, data visualization</p>
+          <p class="result">Key Result: Generated insights into audience engagement patterns across movies and TV shows in the entertainment industry.</p>
+        </div>
+        <p><strong>Code available upon request.</strong></p>
+      </article>
+
+      <article class="project-card">
+        <div>
+          <h3>Statistical Data Analysis Assessment</h3>
+          <p>Completed a comprehensive statistical analysis assessment demonstrating data cleaning, exploratory analysis, statistical testing, and visualization. Applied professional workflow to derive meaningful insights from complex datasets.</p>
+          <p class="tech">Technologies: Python, statistical methods, data interpretation, visualization</p>
+          <p class="result">Key Result: Showcased proficiency in statistical methodology and analysis for real-world dataset evaluation.</p>
+        </div>
+        <p><strong>Code available upon request.</strong></p>
+      </article>
+    </div>
   </section>
 
   <section id="experience">
@@ -164,8 +272,14 @@ Awesome news: the structure is ready and complete in one shot. You can copy/past
 
   <section id="contact">
     <h2>Contact</h2>
-    <p>Feel free to connect via email@example.com or LinkedIn.</p>
+    <p>Email: <a href="mailto:jtroumbley13@gmail.com">jtroumbley13@gmail.com</a></p>
+    <p>LinkedIn: Jacob Troumbley</p>
   </section>
+
+  <footer>
+    <p>Thanks for visiting my portfolio. Connect on LinkedIn or send an email to discuss data science work and project collaboration.</p>
+    <p><a href="mailto:jtroumbley13@gmail.com">jtroumbley13@gmail.com</a> • LinkedIn: Jacob Troumbley</p>
+  </footer>
 </body>
 </html>
 ```
